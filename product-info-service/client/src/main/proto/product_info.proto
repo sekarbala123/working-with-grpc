@@ -1,0 +1,20 @@
+// ProductInfo.proto
+syntax = "proto3"; // protocol buffer version
+// import ;
+
+package ecommerce; // package name
+
+service ProductInfo{ // Defining the service
+    rpc addProduct(Product) returns (ProductID); // Remote method to add Product
+    rpc getProduct(ProductID) returns (Product); // Remote method to get Product
+}
+
+message Product{ // Definition of Product
+    string id =1; // field type, name, field identification number
+    string name=2;
+    string description=3;
+}
+
+message ProductID{
+    string value = 1;
+}

@@ -1,0 +1,8 @@
+*/vendor/*
+*.gradler/*
+*/build*
+*.classpath
+*.settings*
+*/target*
+*.class
+*.project
